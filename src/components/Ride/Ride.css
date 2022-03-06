@@ -1,0 +1,22 @@
+.bg-Ride{
+    background: url("https://res.cloudinary.com/dqxql5rpf/image/upload/v1646542583/HerRyde/HerRyde_Demo_Web_Design_r6dt9v.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ride-heading{
+    color: #521a7a;
+    font-weight: 800;
+}
+
+.card{
+    border-radius: 25px;
+    border:  0px solid;
+}
+
+.sign-up-heading-text{
+    font-weight: bold;
+    font-size: 18px;
+}

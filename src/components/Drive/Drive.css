@@ -1,0 +1,36 @@
+.car-radio-btn{
+    background: #521a7a;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #521a7a;
+    box-shadow:none;
+    color: #521a7a;
+    /* background-color: #d9d9d9; */
+}
+.form-control{
+    background-color: #d9d9d9;
+}
+
+.drive-heading-one{
+    font-weight: bold;
+}
+
+@media(min-width:600px){
+    .drive-image{
+        height: 70vh;
+        width: 127%;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;   
+    }
+}
+
+@media(max-width:600px){
+    .drive-image{
+        width: 104%;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;   
+    }
+}

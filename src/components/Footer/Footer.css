@@ -1,0 +1,23 @@
+.footer{
+    background-color: #F1EEF5;
+}
+
+.footer-logo{
+    width: 40%;
+}
+
+.footer-p1{
+    color: #521a7a;
+    font-weight: bold;
+}
+
+.ftr-colmn-two{
+    color: #521a7a;
+    font-weight: bold;
+}
+
+.ftr-colmn-three{
+    color: #521a7a;
+    font-weight: bold;
+    margin-top: 7rem;
+}

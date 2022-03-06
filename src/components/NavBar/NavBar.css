@@ -1,0 +1,61 @@
+.navbar-home{
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+    background-color: white;
+}
+.nav-link{
+    color: #521a7a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-sign-up{
+    background-color: #521a7a;
+    color: white;
+    height: max-content;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-sign-up:hover{
+    color: #521a7a;
+    background-color: white;
+    border: 1px solid #521a7a;
+}
+
+.nav-brand-img{
+    width: 150px;
+}
+
+.dropdown-menu{
+    background-color: #DBCFE3;
+}
+
+.dropdown .nav-link:hover{
+    color: white;
+}
+
+
+@media (max-width:600px) {
+    .navbar-fixed-side {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    button:focus {
+        outline: 0px dotted;
+        outline: 0px auto -webkit-focusring-color;
+    }
+   
+}
+
+
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        left: -23px;
+    }
+
+    .navbar-fixed-side {
+        display: none;
+    }
+}

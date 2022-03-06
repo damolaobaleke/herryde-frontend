@@ -1,0 +1,86 @@
+
+.her-text{
+    color: #ff7e7e;
+}
+
+.heading-one{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.sec1-p1{
+    font-weight: 500;
+}
+
+.sec1-p2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-drive{
+    background-color: #DBCFE3;
+    color: #521a7a;
+    font-weight: bold;
+}
+
+.btn-drive:hover{
+    background-color: #ff7e7e;
+    color: white;
+}
+
+.btn-ride{
+    background-color: #ff7e7e;
+    color: #521a7a;
+    font-weight: bold;
+}
+
+.btn-ride:hover{
+    background-color: #DBCFE3;
+    color: white;
+}
+
+.her-circle{
+    position: absolute;
+    width: 170px;
+}
+
+@media (min-width:600px) {
+    .bg-Sec1{
+        height: 100vh;
+        background: url("https://res.cloudinary.com/dqxql5rpf/image/upload/v1646441685/HerRyde/HerRyde_Demo_Web_Design_fjfzcf.png");
+        background-position:center;
+        background-repeat:  no-repeat;
+        background-size: cover;
+    }
+
+    .her-circle{
+        bottom: 245px;
+        left: 176px;
+    }
+
+    .ride-girl{
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .bg-Sec1{
+        height: 100vh;
+        background: #521a7a;
+        background-position:center;
+        background-repeat:  no-repeat;
+        background-size: cover;
+    }
+
+    .her-circle{
+        bottom: 360px;
+        left: 176px;
+    }
+
+    .ride-girl{
+        width: 70%;
+        position: absolute;
+        left: 110px;
+        top: 25px;
+    }
+}
