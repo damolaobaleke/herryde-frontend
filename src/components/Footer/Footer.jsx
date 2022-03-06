@@ -21,9 +21,9 @@ const Footer=()=>{
 
                     <ul className="list-inline mb-0 mt-4">
                         <span className="">
-                            <a className="list-inline-item pr-4 pr-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} class="fa fa-brands fa-instagram"></i></a>
-                            <a className="list-inline-item px-3 px-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} class="fa fa-brands fa-twitter"></i></a>
-                            <a className="list-inline-item px-3 px-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} class="fa fa-brands fa-facebook-square"></i></a>
+                            <a className="list-inline-item pr-4 pr-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} className="fa fa-brands fa-instagram"></i></a>
+                            <a className="list-inline-item px-3 px-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} className="fa fa-brands fa-twitter"></i></a>
+                            <a className="list-inline-item px-3 px-md-2" href="#" target="_blank"><i style={{color:'#521a7a', fontSize:'30px'}} className="fa fa-brands fa-facebook-square"></i></a>
                             
                         </span>
                     </ul>
@@ -34,8 +34,8 @@ const Footer=()=>{
                     <p className="mt-5 mt-md-3 ftr-colmn-two">Contact:</p>
                     <ul className="list-inline d-flex flex-column py-2 ftr-colmn-two ">
                         
-                        <li className="py-2"><i style={{color:'#521a7a'}} class="fa fa-solid fa-envelope"></i> contact@herryde.com</li>
-                        <li className="py-2"><i style={{color:'#521a7a'}} class="fa fa-solid fa-phone"></i> +2349134267818</li>   
+                        <li className="py-2"><i style={{color:'#521a7a'}} className="fa fa-solid fa-envelope"></i> contact@herryde.com</li>
+                        <li className="py-2"><i style={{color:'#521a7a'}} className="fa fa-solid fa-phone"></i> +2349134267818</li>   
                     </ul>
                 </div>
 
