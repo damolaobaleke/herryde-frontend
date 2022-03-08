@@ -73,14 +73,15 @@
     }
 
     .her-circle{
-        bottom: 360px;
+        bottom: 286px;
         left: 176px;
     }
 
     .ride-girl{
-        width: 70%;
+        width: 96%;
         position: absolute;
-        left: 110px;
-        top: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        top: 68px
     }
 }

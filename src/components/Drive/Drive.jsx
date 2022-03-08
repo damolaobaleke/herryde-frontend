@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Constants from '../../constants/constants'
+import { Slide } from '@mui/material';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
@@ -73,7 +74,7 @@ const DrivePage=()=>{
                                <label className="mr-3" htmlFor="car">I have a car</label>
                                
                                <input className="ml-3  car-radio-btn" type="radio" name="car" id="car" value="needCar" onChange={(e)=> setForm({...driveForm, carStatus:e.target.value})} />
-                               <label className="mx-2" htmlFor="car">I need a car</label>
+                               <label className="ml-1" htmlFor="car">I need a car</label>
                             </div>
 
                             <div className="row my-3">
@@ -102,7 +103,9 @@ const DrivePage=()=>{
 
                     {/*Find better image*/}
                     <div className="col-md-7">
-                       <img className="drive-image mt-2 mb-5" src="https://images.unsplash.com/photo-1547319784-330d3b12b3bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""/>
+                        <Slide direction="left" in={true} timeout={1000}>
+                            <img className="drive-image mt-2 mb-5 border" src="https://res.cloudinary.com/dqxql5rpf/image/upload/v1646668442/HerRyde/AdobeStock_58800850_jhxojh.jpg" alt=""/>
+                       </Slide>
                     </div>
                 </div>
             </div>

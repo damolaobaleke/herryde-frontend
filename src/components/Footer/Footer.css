@@ -1,5 +1,13 @@
-.footer{
-    background-color: #F1EEF5;
+@media(min-width:600px){
+    .footer{
+        background-color: #F1EEF5;
+    }
+
+    .ftr-colmn-three{
+        color: #521a7a;
+        font-weight: bold;
+        margin-top: 7rem;
+    }
 }
 
 .footer-logo{
@@ -16,8 +24,16 @@
     font-weight: bold;
 }
 
-.ftr-colmn-three{
-    color: #521a7a;
-    font-weight: bold;
-    margin-top: 7rem;
+@media(max-width:600px){
+    .ftr-colmn-three{
+        color: #521a7a;
+        font-weight: bold;
+    }
+
+    .footer{
+        background-color: #F1EEF5;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+
+    }
 }

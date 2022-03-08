@@ -1,7 +1,22 @@
-.car-radio-btn{
-    background: #521a7a;
-    border-radius: 3px;
-    font-size: 14px;
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*  */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    /* */
+    background-clip: content-box;
+    border: 1px solid #521a7a;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+  
+input[type="radio"]:checked {
+    background-color: #521a7a;
 }
 
 .form-control:focus {
