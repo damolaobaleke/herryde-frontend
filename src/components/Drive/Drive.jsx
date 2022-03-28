@@ -3,7 +3,7 @@ import Constants from '../../constants/constants'
 import { Slide } from '@mui/material';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
 import NavBarDrive from '../NavBar/NavBarRideDrive'
 import Footer from '../Footer/Footer'
 import './Drive.css';
@@ -13,23 +13,26 @@ const DrivePage=()=>{
     const[driveForm, setForm] = useState({firstname:"", lastname:"", email:"", phoneNumber:"", city:"", carStatus:"", herRydeStatus:Constants.DRIVER})
 
 
+    const firebaseConfig = {
+        apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+        authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+        projectId: process.env.REACT_APP_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_APP_ID ,
+    };
+    
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
     useEffect(()=>{
-        const firebaseConfig = {
-            apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-            authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-            projectId: process.env.REACT_APP_PROJECT_ID,
-            storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-            messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-            appId: process.env.REACT_APP_APP_ID ,
-        };
-        
-        const firebaseApp = initializeApp(firebaseConfig);
+        //getDrivers()
+        //getRiders()
     },[])
 
     const onFormSubmit= async (e)=>{
         e.preventDefault();
-       
-        const db = getFirestore();
 
         try {
             const userRef = await addDoc(collection(db, "users"), {
@@ -47,12 +50,34 @@ const DrivePage=()=>{
                 alert("Submitted successfuly!")
 
                 //either send email, set toast to true
+                setForm({...driveForm, firstname:"",lastname:"", email:"", phoneNumber:"", city:""})
             }
 
         } catch (e) {
             console.error("Error adding document: ", e);
         }
           
+    }
+
+    const getRiders =async()=>{
+        
+        const resp  = query(collection(db, Constants.USERS), where("herRydeStatus", "==", Constants.RIDER));
+
+        const querySnapshot = await getDocs(resp);
+
+        console.log("Riders" , querySnapshot.size)
+        // querySnapshot.forEach((doc) => {
+        //     console.log(doc.id, " => ", doc.data());
+        // });
+
+    }
+
+    const getDrivers =async()=>{
+        const resp  = query(collection(db, Constants.USERS), where("herRydeStatus", "==", Constants.DRIVER));
+
+        const querySnapshot = await getDocs(resp);
+
+        console.log("Drivers", querySnapshot.size)
     }
 
     return(

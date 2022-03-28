@@ -1,4 +1,7 @@
 module.exports={
     DRIVER: "DRIVER",
-    RIDER: "RIDER"
+    RIDER: "RIDER",
+    USERS:"users",
+    status:"herRydeStatus"
+
 }
