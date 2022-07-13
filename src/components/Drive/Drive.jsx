@@ -66,9 +66,9 @@ const DrivePage=()=>{
         const querySnapshot = await getDocs(resp);
 
         console.log("Riders" , querySnapshot.size)
-        // querySnapshot.forEach((doc) => {
-        //     console.log(doc.id, " => ", doc.data());
-        // });
+        querySnapshot.forEach((doc) => {
+            //console.log(doc.id, " => ", doc.data());
+        });
 
     }
 
@@ -89,11 +89,23 @@ const DrivePage=()=>{
                     <div className="col-md-5">
                         <h1 className="drive-heading-one">Drive with HerRyde</h1>
 
-                        <p>BreakTheBias and earn while driving with <br/> HerRyde</p>
+                        <p>Earn money without worrying about your <br/> safety</p>
 
-                        <p style={{fontWeight:'bold'}}>Sign up now</p>
+                        <p>Download the driver app to Sign up now</p>
+                        <div className="d-flex mt-2">
+                            <button className="btn app-store-btn">
+                                <i style={{color:'white', background:'cover'}} class="fa fa-solid fa-brands fa-apple"></i>
+                                <a className="app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank">Available on the<br/><span style={{fontWeight:'900'}}>App store</span></a>
+                            </button>
+                            
+                            <button className="btn play-store-btn ml-3">
+                                <a className="play-store-btn" href="" target="_blank"><i style={{color:'white'}} class="fa-brands fa-google-play"></i>Get it on<br/><span style={{fontWeight:'900'}}>Google Play</span></a>
+                            </button>
+                        </div>
 
-                        <form onSubmit={onFormSubmit} action="" method="POST">
+                        {/* <p style={{fontWeight:'bold'}}>Sign up now</p> */}
+
+                        {/* <form onSubmit={onFormSubmit} action="" method="POST">
                             <div className="my-3">
                                <input className="mx-1 car-radio-btn" type="radio" name="car" id="car" value="haveCar" onChange={(e)=> setForm({...driveForm, carStatus:e.target.value})}/>
                                <label className="mr-3" htmlFor="car">I have a car</label>
@@ -123,7 +135,7 @@ const DrivePage=()=>{
                                     <input className="btn btn-drive px-4" type="submit" value="Sign up"/>
                                 </div>
                             </div>
-                        </form>
+                        </form> */}
                     </div>
 
                     {/*Find better image*/}
