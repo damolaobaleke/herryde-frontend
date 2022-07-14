@@ -33,6 +33,20 @@ input[type="radio"]:checked {
     font-weight: bold;
 }
 
+.app-store-btn{
+    color: white!important;
+    font-weight: 300;
+    background-color: #521a7a;
+    text-align: left;
+}
+
+.play-store-btn{
+    color: #521a7a!important;
+    font-weight: 300;
+    background-color: #DBCFE3;
+    text-align: left;
+}
+
 @media(min-width:600px){
     .drive-image{
         height: 70vh;

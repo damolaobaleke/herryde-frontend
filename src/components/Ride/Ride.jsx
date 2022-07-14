@@ -47,6 +47,7 @@ const RidePage=()=>{
                 alert("Submitted successfuly!")
 
                 //either send email, set toast to true
+                setForm({...rideForm, firstname:"",lastname:"", email:"", phoneNumber:"", city:""})
             }
            
 
@@ -68,12 +69,25 @@ const RidePage=()=>{
                         </div>
 
                         <div className="col-md-5">
-                            <h3 className="ride-heading my-3">Enjoy the safety, reliability and <br className="line-break"/> comfort of riding with HerRyde</h3>
-
                             <div className="card py-2 px-2">
                                 <div className="card-body">
 
-                                    <form onSubmit={onFormSubmit} action="" method="POST">
+                                    <h3 className="ride-heading my-3">Enjoy the safety, reliability and  comfort of riding with HerRyde</h3>
+
+
+                                    <p>Download the passenger app to Sign up now</p>
+                                    <div className="d-flex mt-2">
+                                        <button className="btn app-store-btn">
+                                            <i style={{color:'white', background:'cover'}} class="fa fa-solid fa-brands fa-apple"></i>
+                                            <a className="app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank">Available on the<br/><span style={{fontWeight:'900'}}>App store</span></a>
+                                        </button>
+                                    
+                                        <button className="btn play-store-btn ml-3">
+                                            <a className="play-store-btn" href="" target="_blank"><i style={{color:'white'}} class="fa-brands fa-google-play"></i>Get it on<br/><span style={{fontWeight:'900'}}>Google Play</span></a>
+                                        </button>
+                                    </div>
+
+                                    {/* <form onSubmit={onFormSubmit} action="" method="POST">
                                         <p className="sign-up-heading-text">Sign up now</p>
 
                                         <div className="row my-3">
@@ -97,7 +111,7 @@ const RidePage=()=>{
                                             <input className="btn btn-sign-up px-4" type="submit" value="Sign up"/>
                                             </div>
                                         </div>
-                                    </form>
+                                    </form> */}
 
                                 </div>
                             </div>
