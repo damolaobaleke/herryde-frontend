@@ -76,12 +76,12 @@ const RidePage=()=>{
                                     <p>Download the passenger app to Sign up now</p>
 
                                     <div className="d-flex mt-2">
-                                       <a className="btn app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank" rel="noreferrer">
+                                       <a className="btn app-store-btn pr-4 pr-md-0" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank" rel="noreferrer">
                                             <div className="row">
-                                                <div className="col-md-2">
+                                                <div className="col-2">
                                                     <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa fa-solid fa-brands fa-apple"></i>
                                                 </div>
-                                                <div className="col-md-10">
+                                                <div className="col-9">
                                                     Available on the <br /><span style={{fontWeight:'900'}}>App store</span>
                                                 </div>
                                             </div>
@@ -90,11 +90,11 @@ const RidePage=()=>{
                                         <a className="btn play-store-btn" href="https://play.google.com/store/apps/details?id=herryde.passenger" target="_blank" rel="noreferrer">
                                             <div className="row">
 
-                                                <div className="col-md-2">
+                                                <div className="col-2">
                                                     <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa-solid fa-brands fab fa-google-play"></i>
                                                 </div>
 
-                                                <div className="col-md-9">
+                                                <div className="col-9">
                                                     Get it on<span style={{fontWeight:'900'}}><br/>Google Play</span>
                                                 </div>
                                             </div>

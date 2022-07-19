@@ -41,6 +41,8 @@ input[type="radio"]:checked {
     transform: scale(0.9);
     border-radius: 10px;
     height: 60px;
+    position: relative;
+    left: -10px;
 }
 
 .play-store-btn{
