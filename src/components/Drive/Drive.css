@@ -38,6 +38,9 @@ input[type="radio"]:checked {
     font-weight: 300;
     background-color: #521a7a;
     text-align: left;
+    transform: scale(0.9);
+    border-radius: 10px;
+    height: 60px;
 }
 
 .play-store-btn{
@@ -45,6 +48,9 @@ input[type="radio"]:checked {
     font-weight: 300;
     background-color: #DBCFE3;
     text-align: left;
+    transform: scale(0.9);
+    border-radius: 10px;
+    height: 60px;
 }
 
 @media(min-width:600px){

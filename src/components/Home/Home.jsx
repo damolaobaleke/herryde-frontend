@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { Fade } from '@mui/material'
 import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer'
 import './Home.css'
 
 const Home=()=>{
