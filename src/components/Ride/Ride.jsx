@@ -73,18 +73,32 @@ const RidePage=()=>{
                                 <div className="card-body">
 
                                     <h3 className="ride-heading my-3">Enjoy the safety, reliability and  comfort of riding with HerRyde</h3>
-
-
                                     <p>Download the passenger app to Sign up now</p>
+
                                     <div className="d-flex mt-2">
-                                        <button className="btn app-store-btn">
-                                            <i style={{color:'white', background:'cover'}} class="fa fa-solid fa-brands fa-apple"></i>
-                                            <a className="app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank">Available on the<br/><span style={{fontWeight:'900'}}>App store</span></a>
-                                        </button>
-                                    
-                                        <button className="btn play-store-btn ml-3">
-                                            <a className="play-store-btn" href="" target="_blank"><i style={{color:'white'}} class="fa-brands fa-google-play"></i>Get it on<br/><span style={{fontWeight:'900'}}>Google Play</span></a>
-                                        </button>
+                                       <a className="btn app-store-btn pr-4 pr-md-0" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank" rel="noreferrer">
+                                            <div className="row">
+                                                <div className="col-2">
+                                                    <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa fa-solid fa-brands fa-apple"></i>
+                                                </div>
+                                                <div className="col-9">
+                                                    Available on the <br /><span style={{fontWeight:'900'}}>App store</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a className="btn play-store-btn" href="https://play.google.com/store/apps/details?id=herryde.passenger" target="_blank" rel="noreferrer">
+                                            <div className="row">
+
+                                                <div className="col-2">
+                                                    <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa-solid fa-brands fab fa-google-play"></i>
+                                                </div>
+
+                                                <div className="col-9">
+                                                    Get it on<span style={{fontWeight:'900'}}><br/>Google Play</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
 
                                     {/* <form onSubmit={onFormSubmit} action="" method="POST">

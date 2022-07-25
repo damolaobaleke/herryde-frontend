@@ -22,11 +22,11 @@ const NavBar=()=>{
 
                 <div className="collapse navbar-collapse" id="navlinks">
                     
-                    <div class="dropdown navbar-nav ml-auto">
+                    <div className="dropdown navbar-nav ml-auto">
                         <button className="btn btn-sign-up dropdown-toggle px-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sign Up
                         </button>
-                        <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                        <div className="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
                             <Link className="nav-link"to="/signup/drive">Drive</Link>
                             <Link className="nav-link"to="/signup/ride">Ride</Link>
                         </div>

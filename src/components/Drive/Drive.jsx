@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react'
 import Constants from '../../constants/constants'
-import { Slide } from '@mui/material';
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
+import { Slide } from '@mui/material'
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+import { collection, query, where, getDocs, addDoc } from 'firebase/firestore'
 import NavBarDrive from '../NavBar/NavBarRideDrive'
 import Footer from '../Footer/Footer'
-import './Drive.css';
+import './Drive.css'
 
-
+/*eslint-disable no-undef*/
 const DrivePage=()=>{
-    const[driveForm, setForm] = useState({firstname:"", lastname:"", email:"", phoneNumber:"", city:"", carStatus:"", herRydeStatus:Constants.DRIVER})
+    const[driveForm, setForm] = useState({firstname:'', lastname:'', email:'', phoneNumber:'', city:'', carStatus:'', herRydeStatus:Constants.DRIVER})
 
 
     const firebaseConfig = {
@@ -20,11 +20,11 @@ const DrivePage=()=>{
         storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
         messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
         appId: process.env.REACT_APP_APP_ID ,
-    };
+    }
     
 
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+    const app = initializeApp(firebaseConfig)
+    const db = getFirestore(app)
 
     useEffect(()=>{
         //getDrivers()
@@ -35,7 +35,7 @@ const DrivePage=()=>{
         e.preventDefault();
 
         try {
-            const userRef = await addDoc(collection(db, "users"), {
+            const userRef = await addDoc(collection(db, 'users'), {
                 email: driveForm.email,
                 firstName: driveForm.firstname,
                 lastName:driveForm.lastname,
@@ -44,13 +44,13 @@ const DrivePage=()=>{
                 herRydeStatus:driveForm.herRydeStatus,
                 carStatus:driveForm.carStatus
             });
-            console.log("Document written with ID: ", userRef.id);
+            console.log('Document written with ID: ', userRef.id);
 
             if(userRef.id.length > 1){
                 alert("Submitted successfuly!")
 
                 //either send email, set toast to true
-                setForm({...driveForm, firstname:"",lastname:"", email:"", phoneNumber:"", city:""})
+                setForm({...driveForm, firstname:'',lastname:'', email:'', phoneNumber:"", city:""})
             }
 
         } catch (e) {
@@ -93,14 +93,30 @@ const DrivePage=()=>{
 
                         <p>Download the driver app to Sign up now</p>
                         <div className="d-flex mt-2">
-                            <button className="btn app-store-btn">
-                                <i style={{color:'white', background:'cover'}} class="fa fa-solid fa-brands fa-apple"></i>
-                                <a className="app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank">Available on the<br/><span style={{fontWeight:'900'}}>App store</span></a>
-                            </button>
-                            
-                            <button className="btn play-store-btn ml-3">
-                                <a className="play-store-btn" href="" target="_blank"><i style={{color:'white'}} class="fa-brands fa-google-play"></i>Get it on<br/><span style={{fontWeight:'900'}}>Google Play</span></a>
-                            </button>
+                           
+                            <a className="btn app-store-btn" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank" rel="noreferrer">
+                                <div className="row">
+                                    <div className="col-2">
+                                        <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa fa-solid fa-brands fa-apple"></i>
+                                    </div>
+                                    <div className="col-10">
+                                        Available on the <br /><span style={{fontWeight:'900'}}>App store</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a className="btn play-store-btn" href="https://play.google.com/store/apps/details?id=herryde.passenger" target="_blank" rel="noreferrer">
+                                <div className="row">
+
+                                    <div className="col-2">
+                                        <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa-solid fa-brands fab fa-google-play"></i>
+                                    </div>
+
+                                    <div className="col-9">
+                                        Get it on<span style={{fontWeight:'900'}}><br/>Google Play</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                         {/* <p style={{fontWeight:'bold'}}>Sign up now</p> */}
@@ -153,4 +169,4 @@ const DrivePage=()=>{
 
 }
 
-export default DrivePage;
+export default DrivePage
