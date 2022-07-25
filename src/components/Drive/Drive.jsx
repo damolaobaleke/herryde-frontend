@@ -119,9 +119,9 @@ const DrivePage=()=>{
                             </a>
                         </div>
 
-                        {/* <p style={{fontWeight:'bold'}}>Sign up now</p> */}
+                        <p style={{fontWeight:'bold', marginTop:'15px'}}>Register below to become a driver</p>
 
-                        {/* <form onSubmit={onFormSubmit} action="" method="POST">
+                        <form onSubmit={onFormSubmit} action="" method="POST">
                             <div className="my-3">
                                <input className="mx-1 car-radio-btn" type="radio" name="car" id="car" value="haveCar" onChange={(e)=> setForm({...driveForm, carStatus:e.target.value})}/>
                                <label className="mr-3" htmlFor="car">I have a car</label>
@@ -151,7 +151,7 @@ const DrivePage=()=>{
                                     <input className="btn btn-drive px-4" type="submit" value="Sign up"/>
                                 </div>
                             </div>
-                        </form> */}
+                        </form>
                     </div>
 
                     {/*Find better image*/}
