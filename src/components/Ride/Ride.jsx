@@ -76,7 +76,7 @@ const RidePage=()=>{
                                     <p>Download the passenger app to Sign up now</p>
 
                                     <div className="d-flex mt-2">
-                                       <a className="btn app-store-btn pr-4 pr-md-0" href="https://apps.apple.com/ng/app/herryde-driver/id1626250715" target="_blank" rel="noreferrer">
+                                       <a className="btn app-store-btn pr-4 pr-md-0" href="https://apps.apple.com/ng/app/herryde-women-driving-women/id1626250462" target="_blank" rel="noreferrer">
                                             <div className="row">
                                                 <div className="col-2">
                                                     <i style={{color:'white', background:'cover', paddingTop:'8px', paddingLeft:'2px', transform:'scale(2.5)'}} className="fa fa-solid fa-brands fa-apple"></i>

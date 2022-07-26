@@ -105,7 +105,7 @@ const DrivePage=()=>{
                                 </div>
                             </a>
 
-                            <a className="btn play-store-btn" href="https://play.google.com/store/apps/details?id=herryde.passenger" target="_blank" rel="noreferrer">
+                            <a className="btn play-store-btn" href="https://play.google.com/store/apps/details?id=herryde.driver" target="_blank" rel="noreferrer">
                                 <div className="row">
 
                                     <div className="col-2">

@@ -53,6 +53,7 @@ input[type="radio"]:checked {
     transform: scale(0.9);
     border-radius: 10px;
     height: 60px;
+    width: 170px;
 }
 
 @media(min-width:600px){
