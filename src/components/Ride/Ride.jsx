@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Constants from '../../constants/constants'
 import NavBarRide from '../NavBar/NavBarRideDrive';
+import { Fade, Zoom} from '@mui/material'
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
@@ -26,14 +27,12 @@ const RidePage=()=>{
     },[])
 
     const onFormSubmit= async(e)=>{
-        e.preventDefault();
- 
-        e.preventDefault();
+        e.preventDefault()
        
         const db = getFirestore();
 
         try {
-            const userDocRef = await addDoc(collection(db, "users"), {
+            const userDocRef = await addDoc(collection(db, 'users'), {
                 email: rideForm.email,
                 firstName: rideForm.firstname,
                 lastName:rideForm.lastname,
@@ -43,7 +42,7 @@ const RidePage=()=>{
             });
 
             if(userDocRef.id.length > 1){
-                console.log("Document written with ID: ", userDocRef.id);
+                console.log('Document written with ID: ', userDocRef.id);
                 alert("Submitted successfuly!")
 
                 //either send email, set toast to true
@@ -63,7 +62,7 @@ const RidePage=()=>{
                 <NavBarRide navStatus={nav.navStatus}/>
 
                 <div className="container">
-                    <div className="row mt-5">
+                    <div className="row">
                         <div className="col-md-7">
 
                         </div>
@@ -129,6 +128,17 @@ const RidePage=()=>{
 
                                 </div>
                             </div>
+
+                           {/* Transitions can only have 1 child */}
+                            <div className="book-a-ride-text text-center my-3">
+                                OR BOOK A RIDE BELOW
+                            </div>
+
+                            <Zoom in={true} style={{ transitionDelay: nav.navStatus === 'ride' ? '100ms' : '0ms' }}>
+                                <div>
+                                    <iframe className='mt-2' style={{borderRadius:'10px', border:'1px solid #521a7a'}}  width="100%" height="410" src="https://herryde.ondelight.app/" allowFullScreen allow="geolocation"></iframe>
+                                </div>
+                            </Zoom>
                         </div>
                     </div>
                 </div>

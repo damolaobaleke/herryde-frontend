@@ -1,12 +1,17 @@
 .bg-Ride{
     background: url("https://res.cloudinary.com/dqxql5rpf/image/upload/v1646542583/HerRyde/HerRyde_Demo_Web_Design_r6dt9v.png");
-    height: 100vh;
+    height: 110vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .ride-heading{
+    color: #521a7a;
+    font-weight: 800;
+}
+
+.book-a-ride-text{
     color: #521a7a;
     font-weight: 800;
 }
@@ -29,6 +34,11 @@
 
     .ride-heading{
         /* color: white; */
+        font-weight: 800;
+    }
+
+    .book-a-ride-text{
+        color: #ff7e7e;
         font-weight: 800;
     }
 }

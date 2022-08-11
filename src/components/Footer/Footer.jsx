@@ -40,9 +40,18 @@ const Footer=()=>{
                 </div>
 
                 <div className="col-md-4">
-                    <p className="text-center ftr-colmn-three">&#169; 2022 HerRyde Ltd. All rights reserved</p>  
+                    <ul className="list-inline d-flex flex-column py-2 ftr-colmn-two ">
+                        <li className="py-2 mt-md-5"><a className="mx-2" download="Privacy Policy" rel='noreferrer' style={{color:'#521a7a', textDecoration:'none'}} href="/files/HerRyde Privacy Policy .pdf">Privacy policy</a></li>
+                        <li className="py-2 mt-0 mt-md-3"> <a className="mx-2"  download="Terms of Use" href="/files/HerRyde Terms And Conditions.pdf" rel='noreferrer' style={{color:'#521a7a', textDecoration:'none'}}>Terms of Use</a></li>   
+                    </ul>
                 </div>
 
+            </div>
+
+            <div className="row text-center">
+                <div className="col-md-12">
+                    <p className="text-center ftr-colmn-three">&#169; 2022 HerRyde Ltd. All rights reserved</p>  
+                </div>
             </div>
         </div>
     </footer>
