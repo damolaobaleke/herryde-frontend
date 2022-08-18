@@ -72,7 +72,7 @@ const RidePage=()=>{
                                 <div className="card-body">
 
                                     <h3 className="ride-heading my-3">Enjoy the safety, reliability and  comfort of riding with HerRyde</h3>
-                                    <p>Download the passenger app to Sign up now</p>
+                                    <p>Sign up now to be the first to know when we&#39;re in your city</p>
 
                                     <div className="d-flex mt-2">
                                        <a className="btn app-store-btn pr-4 pr-md-0" href="https://apps.apple.com/ng/app/herryde-women-driving-women/id1626250462" target="_blank" rel="noreferrer">
@@ -100,8 +100,8 @@ const RidePage=()=>{
                                         </a>
                                     </div>
 
-                                    {/* <form onSubmit={onFormSubmit} action="" method="POST">
-                                        <p className="sign-up-heading-text">Sign up now</p>
+                                    <form onSubmit={onFormSubmit} action="" method="POST">
+                                        <p className="sign-up-heading-text mt-2">Sign up now</p>
 
                                         <div className="row my-3">
                                             <div className="col-md-6">
@@ -124,13 +124,13 @@ const RidePage=()=>{
                                             <input className="btn btn-sign-up px-4" type="submit" value="Sign up"/>
                                             </div>
                                         </div>
-                                    </form> */}
+                                    </form>
 
                                 </div>
                             </div>
 
                            {/* Transitions can only have 1 child */}
-                            <div className="book-a-ride-text text-center my-3">
+                            {/* <div className="book-a-ride-text text-center my-3">
                                 OR BOOK A RIDE BELOW
                             </div>
 
@@ -138,7 +138,7 @@ const RidePage=()=>{
                                 <div>
                                     <iframe className='mt-2' style={{borderRadius:'10px', border:'1px solid #521a7a'}}  width="100%" height="410" src="https://herryde.ondelight.app/" allowFullScreen allow="geolocation"></iframe>
                                 </div>
-                            </Zoom>
+                            </Zoom> */}
                         </div>
                     </div>
                 </div>
@@ -149,4 +149,4 @@ const RidePage=()=>{
 
 }
 
-export default RidePage;
+export default RidePage

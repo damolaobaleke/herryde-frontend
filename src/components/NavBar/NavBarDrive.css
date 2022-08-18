@@ -15,6 +15,21 @@
     font-weight: bold;
 }
 
+.nav-link-book-ride{
+    color: #521a7a;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #DBCFE3;
+    border-radius: 5px;
+}
+
+.nav-link-book-ride:hover{
+    color: #ffffff!important;
+    background-color: #521a7a;
+    border-radius: 5px;
+    transition: 500ms ease-in-out ;
+}
+
 .nav-link:hover{
     color: #521a7a;
 }
