@@ -41,11 +41,14 @@ const NavBarRideDrive=(props)=>{
                     <Link className={`nav-link ${props.navStatus !== 'ride' ? 'nav-link-drive' : 'nav-link-ride'}`} to="/signup/drive">Drive</Link>
                 
                     <Link className={`nav-link ${props.navStatus !== 'ride' ? 'nav-link-drive' : 'nav-link-ride'}`} to="/signup/ride">Ride</Link>
+
+                    <Link className={`nav-link ${'nav-link-book-ride'}`} to="/signup/ride/Book-a-ride">Book a Ride</Link>
                              
+                    {/* <a target='_blank' rel='noreferrer' className={`nav-link ${props.navStatus !== 'ride' ? 'nav-link-drive' : 'nav-link-ride'}`} href="https://herryde.ondelight.app/">Book a ride</a>*/}
                 </div>
             </div>
         </nav> 
     )
 
 }
-export default NavBarRideDrive;
+export default NavBarRideDrive

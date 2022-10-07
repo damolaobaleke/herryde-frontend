@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import { Fade } from '@mui/material'
+import Live from '../../animations/live'
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 import './Home.css'
@@ -27,6 +28,8 @@ const Home=()=>{
                                 <Link className="btn btn-drive mr-2 px-5" to="/signup/drive">Drive</Link>
                                 <Link className="btn btn-ride mx-2 px-5" to="/signup/ride">Ride</Link>
                             </div>
+
+                            <p className='sec1-p2 text-white mt-3'><Live/></p>
                         </div>
                         
                     
